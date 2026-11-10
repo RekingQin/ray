@@ -12,6 +12,8 @@
 | [06-关键文件索引.md](06-关键文件索引.md) | 按主题列出值得深入阅读的文件 |
 | [07-可观测性专题.md](07-可观测性专题.md) | 可观测性全景：指标、日志、事件、State API、Dashboard、Tracing、Profiling、调试、OOM，以及自定义开发指南、配置速查与坑点 |
 | [08-容错与稳定性专题.md](08-容错与稳定性专题.md) | 容错全景：故障检测、Task 重试、对象 lineage 重建与 spill、Actor 重启、GCS FT、节点 drain/抢占、PG、RPC 重试与混沌测试、OOM/cgroup 资源保护、Autoscaler、Job，以及 Serve/Train/Tune/Data/RLlib 容错、错误速查、配置速查、22 条代码与文档冲突、最佳实践 |
+| [09-Serve-DAG可观测方案.md](09-Serve-DAG可观测方案.md) | 需求《Ray Dashboard 可观测能力》（对标 Flink Web UI）的落地方案 v2：需求解读与验收标准、v1 方案逐条核验、数据源矩阵、架构、指标语义（饱和度、Busy/Wait/Idle 状态机、反压等级）、R1~R6 详细设计、API、PromQL、前端线框、文件级改动清单、非功能设计、测试、里程碑工时、风险、待澄清问题 |
+| [10-流式训练管道可观测方案.md](10-流式训练管道可观测方案.md) | 方案 v3（**当前有效版本**）：针对 Java 数据处理 actor + PyTorch GPU 训练 actor 的流式管道。包含影响分析、Java 与训练能力核验（Java 指标导出被禁用等平台缺陷）、Stage/Channel/Instance 统一模型、按角色定义的时间分解与反压、Java/Python 双语言埋点 SDK、平台修复清单（P1/P2/P3/J1/J2/G1）、PipelineHead API、前端与 Grafana、里程碑工时、测试、风险、待确认问题 |
 
 ## 一图速览
 
